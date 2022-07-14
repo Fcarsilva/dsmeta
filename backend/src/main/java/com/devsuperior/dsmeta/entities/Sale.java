@@ -8,13 +8,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
-@Table (name = "tb_sales")
-
+@Table(name = "tb_sales")
 public class Sale {
-	
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -22,10 +19,9 @@ public class Sale {
 	private Integer visited;
 	private Integer deals;
 	private Double amount;
-	private LocalDate Date;
+	private LocalDate date;
 	
 	public Sale() {
-		
 	}
 
 	public Long getId() {
@@ -69,13 +65,10 @@ public class Sale {
 	}
 
 	public LocalDate getDate() {
-		return Date;
+		return date;
 	}
 
 	public void setDate(LocalDate date) {
-		Date = date;
+		this.date = date;
 	}
-	
-	
-
 }
