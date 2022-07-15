@@ -26,6 +26,7 @@ public class SmsService {
 	private String twilioPhoneTo;
 
 	@Autowired
+	
 	private SaleRepository saleRepository;
 	
 	public void sendSms(Long saleId) {
